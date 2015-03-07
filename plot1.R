@@ -1,5 +1,5 @@
 #import data, subset
-hpc <- read.csv("~/coursera/ExplDataAnalysis/household_power_consumption.txt", sep=";", stringsAsFactors=FALSE
+hpc <- read.csv("household_power_consumption.txt", sep=";", stringsAsFactors=FALSE
 hpc48<-hpc[which(hpc$Date=="1/2/2007" | hpc$Date=="2/2/2007"),]
 hpc48$Global_active_power<-as.numeric(hpc48$Global_active_power)
 #plot
